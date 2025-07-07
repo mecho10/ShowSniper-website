@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showsniper - 極速自動化購票工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-animation"></div>
+    
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Showsniper Logo" class="logo-img">
+                <span>SHOWSNIPER</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">功能特色</a></li>
+                <li><a href="#demo">實際運行</a></li>
+                <li><a href="#pricing">價格方案</a></li>
+                <li><a href="#contact">聯絡我們</a></li>
+                <li><a href="#pricing" class="get-started-btn">立即開始</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>極速購票<br>從此不再錯過</h1>
+                <p>Showsniper 自動化購票工具，支援 KKTIX、Tixcraft 等主流平台。後台運行，無需開啟網頁，讓您輕鬆搶到心儀門票。</p>
+                <div class="hero-buttons">
+                    <a href="#pricing" class="btn-primary">
+                        立即購買 →
+                    </a>
+                    <a href="#demo" class="btn-secondary">
+                        常見問題
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="terminal-btn red"></span>
+                            <span class="terminal-btn yellow"></span>
+                            <span class="terminal-btn green"></span>
+                        </div>
+                        <div class="terminal-title">ShowSniper v2.0</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-content" id="terminal-content">
+                            <div class="terminal-line">
+                                <span class="time">[14:39:11.408]</span> | Initializing Show Sniper...
+                            </div>
+                            <div class="terminal-line">
+                                <span class="info">Validating license...</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="success">Welcome to Show Sniper!</span>
+                            </div>
+                            <div class="terminal-logo">
+                                Show Sniper
+                            </div>
+                            <div class="terminal-line">
+                                請確保您已透過 Discord Bot 綁定金鑰，否則程式將無法啟動。
+                            </div>
+                            <div class="terminal-line">
+                                <span class="info">驗證金鑰中...</span>
+                            </div>
+                            <div class="terminal-line">
+                                金鑰驗證成功，有效期限至：<span class="success">2025-07-19T16:51:00.693994</span>
+                            </div>
+                            <div class="terminal-line">
+                                金鑰驗證成功，請按 Enter 開始登入帳號...
+                            </div>
+                            <div class="terminal-line">
+                                <span class="warning">🔐 session.json 不足，進行第 1 個帳號手動登入</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="info">[Task1] 你選擇的場次 key: 19641</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="info">[Task1] 任務啟動，準備進入票區頁面...</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="info">[Task1] 購票中...</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="warning">[Task1] 檢查訂單中...</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="success">[Task1] 🎉 恭喜搶到票！</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="success">✓ Discord webhook 發送成功</span>
+                            </div>
+                        </div>
+                        <div class="terminal-cursor"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="section-header">
+            <h2>強大功能</h2>
+            <p>專為台灣用戶打造的自動化購票解決方案</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>極速搶票</h3>
+                <p>毫秒級反應速度，比手動購票快 100 倍。採用先進的演算法，確保在開賣瞬間完成購票流程。</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🖥️</div>
+                <h3>後台運行</h3>
+                <p>無需開啟瀏覽器，節省系統資源。在背景靜默運行，不影響您的日常工作。</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>多平台支援</h3>
+                <p>完美支援 KKTIX、Tixcraft 等主流售票平台，一個工具滿足所有購票需求。</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔧</div>
+                <h3>智能設定</h3>
+                <p>自動識別驗證碼、選擇票區、數量設定等，全自動化處理購票流程。</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>即時通知</h3>
+                <p>購票成功立即通知，支援 LINE、Discord、Email 等多種通知方式。</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>安全可靠</h3>
+                <p>採用加密技術保護您的帳號資訊，定期更新確保穩定運作。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo-section">
+        <div class="section-header">
+            <h2>實際運行畫面</h2>
+            <p>看看 Showsniper 如何在幾秒內完成購票</p>
+        </div>
+        <div class="demo-container">
+            <div class="demo-stats">
+                <div class="stat-card">
+                    <h3>搶票成功率</h3>
+                    <div class="stat-number">90.5%</div>
+                </div>
+                <div class="stat-card">
+                    <h3>平均搶票時間</h3>
+                    <div class="stat-number">0.8</div>
+                </div>
+                <div class="stat-card">
+                    <h3>支援平台數</h3>
+                    <div class="stat-number">2+</div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="section-header">
+            <h2>選擇方案</h2>
+            <p>靈活的價格方案，滿足不同需求</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3 class="plan-name">基礎版</h3>
+                <div class="plan-price">
+                    NT$ 499
+                    <span>/ 月</span>
+                </div>
+                <ul class="plan-features">
+                    <li>支援 KKTIX 平台</li>
+                    <li>基礎驗證碼識別</li>
+                    <li>Email 通知</li>
+                    <li>技術支援</li>
+                </ul>
+                <a href="#" class="btn-secondary">Sold Out</a>
+            </div>
+            <div class="pricing-card featured">
+                <h3 class="plan-name">專業版</h3>
+                <div class="plan-price">
+                    NT$ 2,999
+                    <span>/ 月</span>
+                </div>
+                <ul class="plan-features">
+                    <li>支援所有平台</li>
+                    <li>無限次搶票機會</li>
+                    <li>進階 AI 驗證碼識別</li>
+                    <li>Discord 通知</li>
+                    <li>優先技術支援</li>
+                    <li>多帳號管理</li>
+                </ul>
+                <a href="#" class="btn-primary">選擇方案</a>
+            </div>
+            <div class="pricing-card">
+                <h3 class="plan-name">企業版</h3>
+                <div class="plan-price">
+                    NT$ 5,999
+                    <span>/ 月</span>
+                </div>
+                <ul class="plan-features">
+                    <li>專業版所有功能</li>
+                    <li>多帳號管理</li>
+                    <li>API 接入</li>
+                    <li>專屬客服</li>
+                    <li>客製化功能</li>
+                </ul>
+                <a href="#" class="btn-secondary">Sold Out</a>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="section-header">
+            <h2>常見問題</h2>
+            <p>關於 Showsniper 的常見疑問解答</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Showsniper 支援哪些售票平台？</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>目前我們支援 KKTIX、Tixcraft等主流平台。我們持續更新支援更多平台，確保涵蓋台灣所有主要售票系統。</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>使用 Showsniper 安全嗎？會不會被封帳號？</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>本軟體為高效率輔助工具，已設計避開常見偵測機制。
+                        使用者應了解，所有自動化行為仍可能違反平台規範而導致帳號處置。
+                        購買即代表您同意承擔使用風險，本公司不對任何帳號限制、封鎖、購票失敗負責。</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>搶票成功率有多高？</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>根據統計，使用 Showsniper 的成功率高達 90.5%，比手動搶票快 100 倍以上。成功率會因演唱會熱門程度和網路狀況而有所差異。</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>需要提供我的帳號密碼嗎？</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>是的，程式需要您的售票平台帳號資訊才能代為購票。所有資訊都經過加密儲存在您的本地電腦，我們不會將任何資料上傳到伺服器。</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>可以同時搶多場演唱會嗎？</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>專業版和企業版支援多任務功能，可以同時監控並搶購多場演唱會。您可以設定優先順序，程式會智能分配資源。</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>如何處理驗證碼？</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Showsniper 內建 AI 驗證碼識別系統，可自動識別大部分驗證碼。</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>有試用版嗎？</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p> 購買前請務必確認商品內容，我們不提供免費試用，且因授權機制，售出後恕不退換。</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>如何獲得技術支援？</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>我們提供多種支援管道：Discord 即時客服、Email 支援、詳細使用教學。專業版和企業版用戶享有優先技術支援服務。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>聯絡我們</h2>
+            <p>有任何問題或需求，歡迎與我們聯繫</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" style="height: 24px;" alt="Gmail">
+                        Email
+                    </h3>
+                    <a href="mailto:support@showsniper.com">support@showsniper.com</a>
+                </div>
+                <div class="contact-item">
+                    <h3>
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" style="height: 24px;" alt="Discord">
+                        Discord
+                    </h3>
+                    <a href="https://discord.gg/BaFQRMWf" target="_blank" rel="noopener noreferrer">加入 Discord 群組</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="Showsniper" class="footer-logo-img">
+            </div>
+            <p>&copy; 2024 Showsniper. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
